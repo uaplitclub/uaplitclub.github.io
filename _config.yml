@@ -9,7 +9,7 @@ description: > # this means to ignore newlines until "Language & timezone"
   A vibrant community for literature enthusiasts at UAP.
 
 ## => Logo Configuration
-logo: /assets/images/logo.png # Path to your logo image
+logo: /assets/ulc-logo.png # Correct path to your logo image
 
 ## => Language and Timezone
 ##############################
