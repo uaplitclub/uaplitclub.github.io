@@ -31,4 +31,4 @@ Amid the academic pressures, the club offers a space for relaxation and self-exp
 
 Our most anticipated event, the Lit Fest, brings the entire campus together to celebrate literature in a colorful festival of words and ideas.
 
-The UAP **Literary Club** is more than just a club—it’s a family, bound by love, creativity, and camaraderie.
+The **UAP Literary Club** is more than just a club—it’s a family, bound by love, creativity, and camaraderie.
