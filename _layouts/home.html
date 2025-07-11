@@ -1,7 +1,6 @@
 ---
 layout: articles
 titles:
-  # @start locale config
   en      : &EN       Home
   en-GB   : *EN
   en-US   : *EN
@@ -33,6 +32,20 @@ articles:
   show_readmore: true
   show_info: true
 ---
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Dynamic title based on page title -->
+  <title>{{ page.title | default: site.title }}</title>
+
+  <!-- Favicon link -->
+  <link rel="icon" href="{{ '/assets/ulc-logo.png' | relative_url }}" type="image/png" />
+
+  <!-- Other meta tags -->
+  <meta name="description" content="{{ site.description }}">
+</head>
+
 <div class="layout--home">
   {%- include paginator.html -%}
 </div>
