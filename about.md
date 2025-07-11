@@ -27,6 +27,8 @@ key: page-about
 
 The **UAP Literary Club** at the University of Asia Pacific is a vibrant community where students unite over their shared passion for literature, creativity, and friendship.
 
-Amid the academic pressures, the club offers a space for relaxation and self-expression through various activities like **path-chakra**, writing competitions, movie sessions, and lively discussions.
+Amid the academic pressures, the club offers a space for relaxation and self-expression through various activities like path-chakra, writing competitions, movie sessions, and lively discussions.
 
-Our most anticipated event, the **Lit Fest**, brings the entire campus together to celebrate literature in a colorful festival of words and ideas.
+Our most anticipated event, the Lit Fest, brings the entire campus together to celebrate literature in a colorful festival of words and ideas.
+
+The UAP **Literary Club** is more than just a club—it’s a family, bound by love, creativity, and camaraderie.
