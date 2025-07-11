@@ -1,5 +1,85 @@
 ---
 layout: home
-# articles:
-#   excerpt_type: html
+title: Home
 ---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{ site.description }}">
+  <title>{{ page.title | default: site.title }}</title>
+
+  <!-- Favicon -->
+  <link rel="icon" href="{{ '/assets/images/ulc-logo.png' | relative_url }}" type="image/png">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
+
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <div class="logo">
+        <img src="{{ '/assets/images/ulc-logo.png' | relative_url }}" alt="UAP Literary Club Logo" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/events">Events</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero-section">
+    <div class="hero-overlay">
+      <h1>Welcome to the UAP Literary Club</h1>
+      <p>Explore the world of literature and join a vibrant community of readers.</p>
+      <a href="#join-us" class="cta-button">Join Us</a>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <h2>About Us</h2>
+    <p>At the UAP Literary Club, we bring together literature enthusiasts to share, discuss, and grow together. Join us for monthly discussions, events, and more!</p>
+  </section>
+
+  <section class="events-section">
+    <h2>Upcoming Events</h2>
+    <ul>
+      <li>Monthly Book Discussion - The first Saturday of every month</li>
+      <li>Guest Speaker Series - Quarterly sessions</li>
+      <li>Poetry Slam - Biannual event</li>
+    </ul>
+  </section>
+
+  <section class="featured-books-section">
+    <h2>Featured Books</h2>
+    <div class="book-list">
+      <div class="book-item">
+        <img src="{{ '/assets/images/gatsby-cover.jpg' | relative_url }}" alt="The Great Gatsby" />
+        <h3>The Great Gatsby</h3>
+        <p>A timeless classic that explores love, wealth, and the American Dream.</p>
+      </div>
+      <div class="book-item">
+        <img src="{{ '/assets/images/1984-cover.jpg' | relative_url }}" alt="1984" />
+        <h3>1984</h3>
+        <p>A dystopian novel by George Orwell about totalitarianism and surveillance.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="join-us" class="join-us-section">
+    <h2>Join Us</h2>
+    <p>Become a member of the UAP Literary Club today! Stay updated with our events and get involved in exciting book discussions.</p>
+    <a href="#sign-up" class="cta-button">Sign Up Here</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 UAP Literary Club | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
