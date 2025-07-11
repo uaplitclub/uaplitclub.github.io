@@ -1,6 +1,6 @@
 ---
-layout: default  # Use the default layout for this page
-title: Home  # The page title
+layout: default
+title: "Home"
 ---
 
 <!DOCTYPE html>
@@ -9,50 +9,86 @@ title: Home  # The page title
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="{{ site.description }}">
-
-  <!-- Dynamic Page Title -->
   <title>{{ page.title | default: site.title }}</title>
 
-  <!-- Favicon (Ensure correct path) -->
-  <link rel="icon" href="{{ '/assets/ulc-logo.png' | relative_url }}" type="image/png">
+  <!-- Favicon -->
+  <link rel="icon" href="{{ '/assets/images/ulc-logo.png' | relative_url }}" type="image/png">
 
-  <!-- Additional Meta Tags (If needed) -->
-  <meta name="theme-color" content="#ffffff">
+  <!-- Styles -->
+  <link rel="stylesheet" href="{{ '/assets/css/styles.css' | relative_url }}">
 </head>
 <body>
+
+  <!-- Header Section -->
   <header>
-    <div class="header__brand">
-      <!-- Logo inclusion -->
-      <img src="{{ '/assets/ulc-logo.png' | relative_url }}" alt="{{ site.title }}" class="logo">
-      <a href="{{ site.url }}">{{ site.title }}</a>
+    <div class="header-content">
+      <div class="logo">
+        <img src="{{ '/assets/images/ulc-logo.png' | relative_url }}" alt="UAP Literary Club Logo" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/events">Events</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
 
-  <main>
-    <h1>{{ page.title }}</h1>
-
-    <div class="article-list">
-      <h2>Latest Articles</h2>
-      <ul>
-        {%- for post in paginator.posts %}
-          <li>
-            <a href="{{ post.url }}">
-              <h3>{{ post.title }}</h3>
-              <p>{{ post.excerpt }}</p>
-            </a>
-          </li>
-        {%- endfor %}
-      </ul>
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="hero-overlay">
+      <h1>Welcome to the UAP Literary Club</h1>
+      <p>Explore the world of literature and join a vibrant community of readers.</p>
+      <a href="#join-us" class="cta-button">Join Us</a>
     </div>
-  </main>
+  </section>
 
+  <!-- About Section -->
+  <section class="about-section">
+    <h2>About Us</h2>
+    <p>At the UAP Literary Club, we bring together literature enthusiasts to share, discuss, and grow together. Join us for monthly discussions, events, and more!</p>
+  </section>
+
+  <!-- Events Section -->
+  <section class="events-section">
+    <h2>Upcoming Events</h2>
+    <ul>
+      <li>Monthly Book Discussion - The first Saturday of every month</li>
+      <li>Guest Speaker Series - Quarterly sessions</li>
+      <li>Poetry Slam - Biannual event</li>
+    </ul>
+  </section>
+
+  <!-- Featured Books Section -->
+  <section class="featured-books-section">
+    <h2>Featured Books</h2>
+    <div class="book-list">
+      <div class="book-item">
+        <img src="{{ '/assets/images/gatsby-cover.jpg' | relative_url }}" alt="The Great Gatsby" />
+        <h3>The Great Gatsby</h3>
+        <p>A timeless classic that explores love, wealth, and the American Dream.</p>
+      </div>
+      <div class="book-item">
+        <img src="{{ '/assets/images/1984-cover.jpg' | relative_url }}" alt="1984" />
+        <h3>1984</h3>
+        <p>A dystopian novel by George Orwell about totalitarianism and surveillance.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Join Us Section -->
+  <section id="join-us" class="join-us-section">
+    <h2>Join Us</h2>
+    <p>Become a member of the UAP Literary Club today! Stay updated with our events and get involved in exciting book discussions.</p>
+    <a href="#sign-up" class="cta-button">Sign Up Here</a>
+  </section>
+
+  <!-- Footer Section -->
   <footer>
-    <p>© {{ site.time | date: "%Y" }} UAP Literary Club</p>
+    <p>&copy; 2025 UAP Literary Club | All Rights Reserved</p>
   </footer>
-
-  <!-- Optional: Any external scripts you need -->
-  <script>
-    {%- include scripts/home.js -%}
-  </script>
+  
 </body>
 </html>
