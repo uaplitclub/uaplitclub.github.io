@@ -32,25 +32,32 @@ articles:
   show_readmore: true
   show_info: true
 ---
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Dynamic title based on page title -->
+  <meta name="description" content="{{ site.description }}">
+
+  <!-- Dynamic Page Title -->
   <title>{{ page.title | default: site.title }}</title>
 
-  <!-- Favicon link -->
-  <link rel="icon" href="{{ '/assets/ulc-logo.png' | relative_url }}" type="image/png" />
+  <!-- Favicon (Ensure correct path) -->
+  <link rel="icon" href="{{ '/assets/ulc-logo.png' | relative_url }}" type="image/png">
 
-  <!-- Other meta tags -->
-  <meta name="description" content="{{ site.description }}">
+  <!-- Additional Meta Tags (If needed) -->
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Add any other head elements you need here -->
 </head>
+<body>
+  <div class="layout--home">
+    {%- include paginator.html -%}
+  </div>
+  <script>
+    {%- include scripts/home.js -%}
+  </script>
 
-<div class="layout--home">
-  {%- include paginator.html -%}
-</div>
-<script>
-  {%- include scripts/home.js -%}
-</script>
-
-{{ content }}
+  {{ content }}
+</body>
+</html>
